@@ -1,0 +1,11 @@
+# editor-specifics
+.vimrc
+.vscode
+
+# personal belongings
+.local
+
+# out-of-sourced built objs, execs, generated docs
+build/*
+bin/*
+doc/html/*
