@@ -4,7 +4,7 @@ bctl::sym::sym(const sym &s) : m_type(s.m_type)
 {
 	switch (m_type) {
 	case type::var:
-		m_data.var = new std::string(s.m_data.var->c_str());
+		m_data.var = new std::string(*s.m_data.var);
 		break;
 	case type::uin:
 		m_data.uin = s.m_data.uin;
